@@ -1,6 +1,6 @@
 from fastapi import FastAPI, WebSocket, Depends, WebSocketDisconnect
-from . import database, crud, schemas, websocket_manager
-from .model import models
+from app import database, crud, schemas, websocket_manager
+from app.model import models
 from sqlalchemy.ext.asyncio import AsyncSession
 from fastapi.middleware.cors import CORSMiddleware
 from typing import List

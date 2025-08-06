@@ -1,7 +1,7 @@
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy.future import select
-from . import schemas
-from .model import models
+from app import schemas
+from app.model import models
 
 async def create_bid(db: AsyncSession, item_id: int, bid: schemas.BidIn):
     db_bid = models.Bid(user=bid.user, amount=bid.amount, item_id=item_id)
