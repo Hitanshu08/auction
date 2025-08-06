@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+uvicorn[standard]
+websockets
+sqlalchemy
+asyncpg
+python-dotenv
+psycopg2-binary
